@@ -1,0 +1,668 @@
+@charset "UTF-8";
+@font-face {
+  font-family: FuturaStdBold;
+  src: url(../fonts/FuturaStdBold.otf);
+  font-style: bold;
+}
+
+@font-face {
+  font-family: FuturaStdMedium;
+  src: url(../fonts/FuturaStdMedium.otf);
+  font-style: medium;
+}
+
+@font-face {
+  font-family: FuturaStdLight;
+  src: url(../fonts/FuturaStdLight.otf);
+}
+
+@font-face {
+  font-family: FuturaStdHeavy;
+  src: url(../fonts/FuturaStdHeavy.otf);
+}
+
+@font-face {
+  font-family: FuturaStdBook;
+  src: url(../fonts/FuturaStdBook.otf);
+}
+
+@font-face {
+  font-family: FuturaStdBookOblique;
+  src: url(../fonts/FuturaStdBookOblique.otf);
+}
+
+.relative {
+  position: relative;
+}
+
+.div-title {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+}
+
+.div-title h1 {
+  text-align: center;
+}
+
+.section-title.center h2 {
+  font-family: "FuturaStdBook";
+}
+
+.section-title.center .line {
+  width: 160px;
+  border-color: #c9233f;
+}
+
+.logo-position {
+  top: -2px;
+}
+
+.btn-our-services {
+  color: #fff;
+  background: #c9233f;
+  text-transform: uppercase;
+  margin: 25px auto 25px auto;
+  display: block;
+  border-radius: inherit;
+  padding: 10px 16px;
+  font-size: 18px;
+}
+
+.btn-our-services:hover {
+  color: #999999;
+}
+
+.navbar-fixed-top.on .logo-position {
+  top: -3px;
+}
+
+.navbar-fixed-top.on .navbar-right {
+  margin-top: 5px;
+}
+
+ul.navbar-nav {
+  font-family: "FuturaStdBook";
+}
+
+#tf-home .fita-red:before {
+  content: '';
+  display: block;
+  width: 45%;
+  height: 10px;
+  background: #ac2940;
+  border-radius: 0px 50px 50px 0px;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+
+#tf-home .fita-red:after {
+  content: '';
+  display: block;
+  width: 15%;
+  height: 10px;
+  background: #ac2940;
+  border-radius: 50px 0px 0px 50px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+
+#tf-home .fita-blue:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 10px;
+  background: #363585;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#tf-about h2 {
+  color: #363585;
+}
+
+#tf-about .img-innovation {
+  background: url(../images/icon-innovation.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 88px;
+  width: 55px;
+  margin-top: 30px;
+}
+
+#tf-about .img-beyond-delivery {
+  background: url(../images/icon-beyond-delivery.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 79px;
+  width: 78px;
+  margin-top: 30px;
+}
+
+#tf-about .img-global {
+  background: url(../images/icon-global.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 88px;
+  width: 90px;
+  margin-top: 30px;
+}
+
+#tf-about .img-tailor-made {
+  background: url(../images/icon-tailor-made.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 59px;
+  width: 90px;
+  margin-top: 30px;
+}
+
+#tf-about .sub-title {
+  font-family: "FuturaStdBook";
+  font-size: 3.2rem;
+  color: #363585;
+}
+
+#tf-about p {
+  color: #5b5b5f;
+  font-size: 1.8rem;
+}
+
+#tf-localization h2 {
+  color: #363585;
+}
+
+#tf-localization .box-map {
+  display: block;
+  width: 100%;
+  height: calc(100% - 109px);
+  position: relative;
+}
+
+#tf-localization .box-map .panel {
+  width: 25%;
+  color: #363585;
+}
+
+#tf-localization .box-map .panel .panel-title {
+  font-family: FuturaStdBold;
+  font-size: 12px;
+}
+
+#tf-localization .box-map .panel-eua {
+  position: absolute;
+  display: block;
+  width: 280px;
+  top: 220px;
+}
+
+@media (min-width: 320px) {
+  #tf-localization .box-map .panel-eua {
+    left: 5%;
+  }
+}
+
+@media (min-width: 670px) {
+  #tf-localization .box-map .panel-eua {
+    left: 5%;
+  }
+}
+
+@media (min-width: 880px) {
+  #tf-localization .box-map .panel-eua {
+    left: 0%;
+  }
+}
+
+@media (min-width: 1220px) {
+  #tf-localization .box-map .panel-eua {
+    left: 7%;
+  }
+}
+
+#tf-localization .box-map .panel-india {
+  position: absolute;
+  display: block;
+  width: 280px;
+  top: 300px;
+}
+
+@media (min-width: 320px) {
+  #tf-localization .box-map .panel-india {
+    right: 5%;
+  }
+}
+
+@media (min-width: 670px) {
+  #tf-localization .box-map .panel-india {
+    right: 10%;
+  }
+}
+
+@media (min-width: 880px) {
+  #tf-localization .box-map .panel-india {
+    right: 5%;
+  }
+}
+
+@media (min-width: 992px) {
+  #tf-localization .box-map .panel-india {
+    right: 7%;
+  }
+}
+
+@media (min-width: 1220px) {
+  #tf-localization .box-map .panel-india {
+    right: 15%;
+  }
+}
+
+#tf-localization .box-map .panel-brasil {
+  position: absolute;
+  display: block;
+  width: 280px;
+  top: 490px;
+}
+
+@media (min-width: 320px) {
+  #tf-localization .box-map .panel-brasil {
+    left: 5%;
+  }
+}
+
+@media (min-width: 670px) {
+  #tf-localization .box-map .panel-brasil {
+    left: 10%;
+  }
+}
+
+@media (min-width: 880px) {
+  #tf-localization .box-map .panel-brasil {
+    left: 5%;
+  }
+}
+
+@media (min-width: 992px) {
+  #tf-localization .box-map .panel-brasil {
+    left: 7%;
+  }
+}
+
+@media (min-width: 1220px) {
+  #tf-localization .box-map .panel-brasil {
+    left: 15%;
+  }
+}
+
+@media (min-width: 1700px) {
+  #tf-localization .box-map .panel-brasil {
+    top: 520px;
+  }
+}
+
+#tf-services {
+  padding: 40px 0;
+}
+
+#tf-services h2 {
+  color: #363585;
+}
+
+#tf-services .title {
+  color: #363585;
+  display: block;
+  text-align: center;
+  margin: 15px 0;
+  font-size: 2.5rem;
+}
+
+#tf-services p {
+  font-size: 1.5rem;
+  color: #5b5b5f;
+  display: inline-block;
+  min-height: 40px;
+}
+
+#tf-services .outsourcing {
+  padding: 15px;
+  border: 1px solid #363585;
+  width: calc(100% - 2px);
+}
+
+#tf-services .outsourcing .img {
+  background: url(../images/icon-outsourcing.png);
+  background-size: 150px 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 150px;
+}
+
+#tf-services .cloud {
+  padding: 15px;
+  border: 1px solid #363585;
+  width: calc(100% - 2px);
+}
+
+#tf-services .cloud .img {
+  background: url(../images/icon-cloud-computing.png);
+  background-size: 150px 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 150px;
+}
+
+#tf-services .consulting {
+  padding: 15px;
+  border: 1px solid #363585;
+  width: calc(100% - 2px);
+}
+
+#tf-services .consulting .img {
+  background: url(../images/icon-consulting.png);
+  background-size: 150px 150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 150px;
+}
+
+#tf-clients {
+  height: 700px !important;
+  overflow: hidden;
+}
+
+#tf-clients #myCarousel {
+  height: 700px;
+}
+
+#tf-clients #myCarousel .carousel-indicators li {
+  border-color: #363585;
+}
+
+#tf-clients #myCarousel .title {
+  font-family: FuturaStdBold;
+  font-size: 2.5rem;
+  color: #363585;
+  margin: 20px 0 20px 0;
+}
+
+#tf-clients #myCarousel .descricao {
+  font-family: FuturaStdLight;
+  font-size: 2.0rem;
+  text-align: left;
+  margin-bottom: 15px;
+  color: #363585;
+}
+
+#tf-clients #myCarousel .icon-user {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#tf-clients #myCarousel .panel-body {
+  background: #363585;
+  color: #fff;
+  width: 35%;
+  border-radius: 15px;
+  text-align: left;
+  position: absolute;
+  z-index: 1;
+  bottom: 30px;
+  left: 50px;
+}
+
+#tf-clients #myCarousel .panel-body::before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  border: 25px solid;
+  /* As 4 bordas sólidas com 25px de espessura */
+  border-color: rgba(90, 42, 42, 0) #363585 rgba(90, 42, 42, 0) rgba(90, 42, 42, 0);
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: -40px;
+}
+
+#tf-clients #myCarousel .panel-body .coments {
+  font-family: FuturaStdLight;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+#tf-clients #myCarousel .panel-body .person {
+  float: right;
+}
+
+#tf-clients #myCarousel .ioc .img {
+  background: url(../images/img-ioc.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 700px;
+  position: relative;
+}
+
+#tf-clients #myCarousel .ioc .img:before {
+  content: '';
+  background: url(../images/icon-user-vermelho.png);
+  background-size: 94px 94px;
+  display: block;
+  height: 94px;
+  width: 94px;
+  position: absolute;
+  bottom: 30px;
+  left: -120px;
+}
+
+#tf-clients #myCarousel .ftp .img {
+  background: url(../images/img-fpt.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 700px;
+  position: relative;
+}
+
+#tf-clients #myCarousel .ftp .img:before {
+  content: '';
+  background: url(../images/icon-user-vermelho.png);
+  background-size: 94px 94px;
+  display: block;
+  height: 94px;
+  width: 94px;
+  position: absolute;
+  bottom: 30px;
+  left: -120px;
+}
+
+#tf-clients #myCarousel .da-vinci-project .img {
+  background: url(../images/img-davinciproject.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 700px;
+  position: relative;
+}
+
+#tf-clients #myCarousel .da-vinci-project .img:before {
+  content: '';
+  background: url(../images/icon-user-vermelho.png);
+  background-size: 94px 94px;
+  display: block;
+  height: 94px;
+  width: 94px;
+  position: absolute;
+  bottom: 30px;
+  left: -120px;
+}
+
+#tf-culture {
+  padding: 20px 0;
+}
+
+#tf-culture .section-title {
+  color: #363585;
+  margin: 20px 0 30px;
+}
+
+#tf-culture .wee-culture {
+  background: url(../images/icon-weevex-triangulo.png);
+  background-size: 514px 217px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 217px;
+}
+
+#tf-culture .wee-culture-descricao {
+  display: block;
+  color: #363585;
+  background: #dcdcdc;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+#tf-culture .wee-culture-descricao .title {
+  font-size: 2.0rem;
+  margin-bottom: 20px;
+}
+
+#tf-contact {
+  padding: 40px 0;
+}
+
+#footer .fita-red {
+  position: relative;
+}
+
+#footer .fita-red:before {
+  content: '';
+  display: block;
+  width: 15%;
+  height: 10px;
+  background: #ac2940;
+  border-radius: 0px 50px 50px 0px;
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+#footer .fita-red:after {
+  content: '';
+  display: block;
+  width: 45%;
+  height: 10px;
+  background: #ac2940;
+  border-radius: 50px 0px 0px 50px;
+  position: absolute;
+  top: -10px;
+  right: 0;
+}
+
+#footer .logo-weevex {
+  background: url(../images/logo-weevex-2.png);
+  background-size: 195px 54px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 54px;
+  margin: 30px auto;
+}
+
+#footer .cidade {
+  font-size: 1.5rem;
+}
+
+#footer .contato-email {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 30px auto;
+  display: block;
+}
+
+#footer .contato-email .separate {
+  color: #c9233f;
+}
+
+#footer .flag-brazil {
+  background: url(../images/img-brasil.png);
+  background-size: 40px 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 25px;
+  position: relative;
+  top: -2px;
+  width: 40px;
+  float: left;
+  margin-right: 10px;
+}
+
+#footer .flag-eua {
+  background: url(../images/img-eua.png);
+  background-size: 40px 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 25px;
+  position: relative;
+  top: -2px;
+  width: 40px;
+  float: left;
+  margin-right: 10px;
+}
+
+#footer .flag-india {
+  background: url(../images/img-india.png);
+  background-size: 40px 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  height: 25px;
+  position: relative;
+  top: -2px;
+  width: 40px;
+  float: left;
+  margin-right: 10px;
+}
+
+.js-anime [data-anime] {
+  opacity: 0;
+}
+
+.js-anime [data-anime="left"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+.js-anime [data-anime="right"] {
+  transform: translate3d(50px, 0, 0);
+}
+
+.js-anime [data-anime="top"] {
+  transform: translate3d(0, 50px, 0);
+}
+
+.js-anime [data-anime].animate {
+  opacity: 1;
+  transform: translate3D(0px, 0px, 0px);
+  transition: .5s all ease;
+}
+/*# sourceMappingURL=estilos.css.map */

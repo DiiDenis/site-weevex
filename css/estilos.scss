@@ -1,0 +1,596 @@
+@font-face {
+    font-family: FuturaStdBold;
+    src: url(../fonts/FuturaStdBold.otf);
+    //font-weight: bold;
+    font-style: bold;
+}
+@font-face {
+    font-family: FuturaStdMedium;
+    src: url(../fonts/FuturaStdMedium.otf);
+    //font-weight: medium;
+    font-style: medium;
+}
+@font-face {
+    font-family: FuturaStdLight;
+    src: url(../fonts/FuturaStdLight.otf);
+    //font-weight: normal;
+}
+@font-face {
+    font-family: FuturaStdHeavy;
+    src: url(../fonts/FuturaStdHeavy.otf);
+    //font-weight: normal;
+}
+@font-face {
+    font-family: FuturaStdBook;
+    src: url(../fonts/FuturaStdBook.otf);
+    //font-weight: normal;
+}
+@font-face {
+    font-family: FuturaStdBookOblique;
+    src: url(../fonts/FuturaStdBookOblique.otf);
+    //font-weight: normal;
+}
+
+.relative{
+	position: relative;
+}
+.div-title{
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    h1{
+        text-align: center;
+    }
+}
+
+.section-title.center{
+    h2{
+        font-family: "FuturaStdBook";
+    }
+    .line{
+        width: 160px;
+        border-color: #c9233f
+    }
+}
+
+.logo-position{
+	top: -2px;
+}
+.btn-our-services{
+    color: #fff;
+    background: #c9233f;
+    text-transform: uppercase;
+    margin: 25px auto 25px auto;
+    display: block;
+    border-radius: inherit;
+    padding: 10px 16px;
+    font-size: 18px;
+    &:hover{
+      color: rgb(153, 153, 153);
+    }
+}
+
+.navbar-fixed-top.on{
+    .logo-position{ top: -3px; }
+    .navbar-right{ margin-top:5px;}
+}
+
+ul.navbar-nav{
+    font-family: "FuturaStdBook";
+}
+#tf-home {
+    
+    .fita-red{
+        &:before{
+            content: '';
+            display: block;
+            width: 45%;
+            height: 10px;
+            background: #ac2940;
+            border-radius: 0px 50px 50px 0px;
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+        }
+        &:after{
+            content: '';
+            display: block;
+            width: 15%;
+            height: 10px;
+            background: #ac2940;
+            border-radius: 50px 0px 0px 50px;
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+        }
+    }
+    .fita-blue{
+        &:before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 10px;
+            background: #363585;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+#tf-about{
+    h2{
+        color: #363585;
+    }
+    .img-innovation{
+        background: url(../images/icon-innovation.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 88px;
+        width: 55px;
+        margin-top: 30px
+        
+    }
+    .img-beyond-delivery{
+        background: url(../images/icon-beyond-delivery.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 79px;
+        width: 78px;
+        margin-top: 30px
+    }
+    .img-global{
+        background: url(../images/icon-global.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 88px;
+        width: 90px;
+        margin-top: 30px
+    }
+    .img-tailor-made{
+        background: url(../images/icon-tailor-made.png);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 59px;
+        width: 90px;
+        margin-top: 30px
+    }
+    .sub-title{
+        font-family: "FuturaStdBook";
+        font-size: 3.2rem;
+        color: #363585;
+    }
+    p{
+        color: #5b5b5f;
+        font-size: 1.8rem;
+    }
+}
+
+#tf-localization {
+    h2{
+        color: #363585;
+    }
+    .box-map{
+        display: block;
+        width: 100%;
+        height: calc(100% - 109px);
+        position: relative;
+        .panel{
+            width: 25%;
+            color: #363585;
+            .panel-title{
+                font-family: FuturaStdBold;
+                font-size: 12px
+            }
+        }
+        .panel-eua{
+            position: absolute;
+            display: block;
+            width: 280px;
+            top: 220px;
+            @media (min-width: 320px) {
+                left: 5%;
+            }
+            @media (min-width: 670px) {
+                left: 5%;
+            }
+            @media (min-width: 880px) {
+                left: 0%;
+            }
+            @media (min-width: 1220px) {
+                left: 7%;
+            }
+            
+        }
+        .panel-india{
+            position: absolute;
+            display: block;
+            width: 280px;
+            top: 300px;
+            @media (min-width: 320px) {
+                right: 5%;
+            }
+            @media (min-width: 670px) {
+                right: 10%;
+            }
+            @media (min-width: 880px) {
+                right: 5%;
+            }
+            @media (min-width: 992px) {
+                right: 7%;
+            }
+            @media (min-width: 1220px) {
+                right: 15%;
+            }
+        }
+        .panel-brasil{
+            position: absolute;
+            display: block;
+            width: 280px;
+            top: 490px;
+            @media (min-width: 320px) {
+                left: 5%;
+            }
+            @media (min-width: 670px) {
+                left: 10%;
+            }
+            @media (min-width: 880px) {
+                left: 5%;
+            }
+            @media (min-width: 992px) {
+                left: 7%;
+            }
+            @media (min-width: 1220px) {
+                left: 15%;
+            }
+            @media (min-width: 1700px) {
+                top: 520px;
+            }
+        }
+    }
+}
+
+#tf-services{
+    padding: 40px 0;
+    h2{
+        color: #363585;
+    }
+    .title{
+        color: #363585;
+        display: block;
+        text-align: center;
+        margin: 15px 0;
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1.5rem;
+        color: #5b5b5f;
+        display: inline-block;
+        min-height: 40px;
+    }
+    .outsourcing{
+        padding: 15px;
+        border: 1px solid #363585;
+        width: calc(100% - 2px);
+        .img{
+            background: url(../images/icon-outsourcing.png);
+            background-size: 150px 150px;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            height: 150px;
+        }
+    }
+    .cloud{
+        padding: 15px;
+        border: 1px solid #363585;
+        width: calc(100% - 2px);
+        .img{
+            background: url(../images/icon-cloud-computing.png);
+            background-size: 150px 150px;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            height: 150px;
+        }
+    }
+    .consulting{
+        padding: 15px;
+        border: 1px solid #363585;
+        width: calc(100% - 2px);
+        .img{
+            background: url(../images/icon-consulting.png);
+            background-size: 150px 150px;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            height: 150px;
+        }
+    }
+}
+
+#tf-clients{
+    height: 700px !important;
+    overflow: hidden;
+    #myCarousel{
+        height: 700px;
+        .carousel-indicators li{
+            border-color: #363585;
+        }
+        .title{
+            font-family: FuturaStdBold;
+            font-size: 2.5rem;
+            color: #363585;
+            margin: 20px 0 20px 0;
+        }
+        .descricao{
+            font-family: FuturaStdLight;
+            font-size: 2.0rem;
+            text-align: left;
+            margin-bottom: 15px;
+            color: #363585;
+        }
+        .icon-user{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .panel-body{
+            background: #363585;
+            color: #fff;
+            width: 35%;
+            border-radius: 15px;
+            text-align: left;    
+            position: absolute;
+            z-index: 1;
+            bottom: 30px;
+            left: 50px;
+            &::before{
+                content: '';
+                width:30px;
+                height:30px;
+                border: 25px solid; /* As 4 bordas sólidas com 25px de espessura */
+                border-color: rgba(90, 42, 42, 0) #363585 rgba(90, 42, 42, 0)  rgba(90, 42, 42, 0); 
+                display: block;
+                position: absolute;
+                bottom: 10px;
+                left: -40px;;
+            }
+            .coments{
+                font-family: FuturaStdLight;
+                font-size: 1.5rem;                           
+                margin-bottom: 10px;
+            }
+            .person{
+                float: right;
+            }
+        }
+        .ioc{
+            .img{
+                background: url(../images/img-ioc.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: block;
+                height: 700px;
+                position: relative;
+                &:before{
+                    content: '';
+                    background: url(../images/icon-user-vermelho.png);
+                    background-size: 94px 94px;
+                    display: block;
+                    height: 94px;
+                    width: 94px;
+                    position: absolute;
+                    bottom: 30px;
+                    left: -120px;
+                }
+            }
+        }
+        .ftp{
+            .img{
+                background: url(../images/img-fpt.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: block;
+                height: 700px;
+                position: relative;
+                &:before{
+                    content: '';
+                    background: url(../images/icon-user-vermelho.png);
+                    background-size: 94px 94px;
+                    display: block;
+                    height: 94px;
+                    width: 94px;
+                    position: absolute;
+                    bottom: 30px;
+                    left: -120px;
+                }
+            }
+        }
+        .da-vinci-project{
+            .img{
+                background: url(../images/img-davinciproject.png);
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                display: block;
+                height: 700px;
+                position: relative;
+                &:before{
+                    content: '';
+                    background: url(../images/icon-user-vermelho.png);
+                    background-size: 94px 94px;
+                    display: block;
+                    height: 94px;
+                    width: 94px;
+                    position: absolute;
+                    bottom: 30px;
+                    left: -120px;
+                }
+            }
+        }
+    }    
+}
+
+#tf-culture {
+    padding: 20px 0;
+    .section-title{
+        color: #363585;
+        margin: 20px 0 30px;
+    }
+    .wee-culture{
+        background: url(../images/icon-weevex-triangulo.png);
+        background-size: 514px 217px;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 217px;
+    }
+    .wee-culture-descricao{
+        display: block;
+        color: #363585;
+        background: #dcdcdc;
+        padding: 20px;
+        margin-top: 30px;
+        .title{
+            font-size: 2.0rem;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+#tf-contact{
+    padding: 40px 0;
+}
+#footer{    
+    .fita-red{
+        position: relative;
+        &:before{
+            content: '';
+            display: block;
+            width: 15%;
+            height: 10px;
+            background: #ac2940;
+            border-radius: 0px 50px 50px 0px;
+            position: absolute;
+            top: -10px;
+            left: 0;
+        }
+        &:after{
+            content: '';
+            display: block;
+            width: 45%;
+            height: 10px;
+            background: #ac2940;
+            border-radius: 50px 0px 0px 50px;
+            position: absolute;
+            top: -10px;
+            right: 0;
+        }
+    }
+    .logo-weevex{
+        background: url(../images/logo-weevex-2.png);
+        background-size: 195px 54px;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 54px;
+        margin: 30px auto;
+    }
+    .cidade{
+        font-size: 1.5rem;
+    }
+    .contato-email{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 30px auto;
+        display: block;
+        .separate{
+            color: #c9233f;
+        }
+    }
+    .flag-brazil{
+        background: url(../images/img-brasil.png);
+        background-size: 40px 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 25px;
+        position: relative;
+        top: -2px;
+        width: 40px;
+        float: left;
+        margin-right: 10px;
+    }
+    .flag-eua{
+        background: url(../images/img-eua.png);
+        background-size: 40px 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 25px;
+        position: relative;
+        top: -2px;
+        width: 40px;
+        float: left;
+        margin-right: 10px;
+    }
+    .flag-india{
+        background: url(../images/img-india.png);
+        background-size: 40px 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        height: 25px;
+        position: relative;
+        top: -2px;
+        width: 40px;
+        float: left;
+        margin-right: 10px;
+    }
+}
+// ANIMAÇÃO
+.js-anime{
+
+	[data-anime] {
+		opacity: 0;
+	}
+	[data-anime="left"] {
+		transform: translate3d(-50px, 0, 0);
+	}
+	
+	[data-anime="right"] {
+	transform: translate3d(50px, 0, 0);
+	}
+	
+	[data-anime="top"] {
+	transform: translate3d(0, 50px, 0);
+	}
+
+	[data-anime].animate {
+		opacity: 1;
+		transform: translate3D(0px, 0px, 0px);
+		transition: .5s all ease;
+	}
+} 
+
+
+// Teste
+
+// .navbar-header{
+//     width: 100%;
+// }
+// .navbar-toggle{
+//     display: block;   
+//     float: right; 
+// }
